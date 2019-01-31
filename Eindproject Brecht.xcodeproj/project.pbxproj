@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		49A7075D22032E0100B604F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7075C22032E0100B604F7 /* AppDelegate.swift */; };
-		49A7075F22032E0100B604F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7075E22032E0100B604F7 /* ViewController.swift */; };
+		49A7075F22032E0100B604F7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7075E22032E0100B604F7 /* MainViewController.swift */; };
 		49A7076222032E0100B604F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A7076022032E0100B604F7 /* Main.storyboard */; };
 		49A7076422032E0400B604F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49A7076322032E0400B604F7 /* Assets.xcassets */; };
 		49A7076722032E0400B604F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A7076522032E0400B604F7 /* LaunchScreen.storyboard */; };
+		49A707722203388F00B604F7 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A707712203388F00B604F7 /* Artist.swift */; };
+		49A7077922034F4000B604F7 /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7077822034F4000B604F7 /* Stage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		49A7075922032E0100B604F7 /* Eindproject Brecht.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eindproject Brecht.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A7075C22032E0100B604F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		49A7075E22032E0100B604F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		49A7075E22032E0100B604F7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		49A7076122032E0100B604F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49A7076322032E0400B604F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49A7076622032E0400B604F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49A7076822032E0400B604F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49A707712203388F00B604F7 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		49A7077822034F4000B604F7 /* Stage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,40 @@
 		49A7075B22032E0100B604F7 /* Eindproject Brecht */ = {
 			isa = PBXGroup;
 			children = (
-				49A7075C22032E0100B604F7 /* AppDelegate.swift */,
-				49A7075E22032E0100B604F7 /* ViewController.swift */,
-				49A7076022032E0100B604F7 /* Main.storyboard */,
-				49A7076322032E0400B604F7 /* Assets.xcassets */,
+				49A7077022032E3E00B604F7 /* controller */,
+				49A7075E22032E0100B604F7 /* MainViewController.swift */,
+				49A7076F22032E3900B604F7 /* view */,
 				49A7076522032E0400B604F7 /* LaunchScreen.storyboard */,
+				49A7076022032E0100B604F7 /* Main.storyboard */,
+				49A7076E22032E3100B604F7 /* model */,
+				49A7075C22032E0100B604F7 /* AppDelegate.swift */,
+				49A7076322032E0400B604F7 /* Assets.xcassets */,
 				49A7076822032E0400B604F7 /* Info.plist */,
 			);
 			path = "Eindproject Brecht";
+			sourceTree = "<group>";
+		};
+		49A7076E22032E3100B604F7 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				49A707712203388F00B604F7 /* Artist.swift */,
+				49A7077822034F4000B604F7 /* Stage.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		49A7076F22032E3900B604F7 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		49A7077022032E3E00B604F7 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +165,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49A7075F22032E0100B604F7 /* ViewController.swift in Sources */,
+				49A707722203388F00B604F7 /* Artist.swift in Sources */,
+				49A7075F22032E0100B604F7 /* MainViewController.swift in Sources */,
+				49A7077922034F4000B604F7 /* Stage.swift in Sources */,
 				49A7075D22032E0100B604F7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +323,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "be.ehb.Eindproject-Brecht";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,7 +340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "be.ehb.Eindproject-Brecht";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
