@@ -33,7 +33,6 @@ class DAO{
         let drinks3 = Stage.init(stageName: "Drinks 3", coordinate: CLLocationCoordinate2DMake(51.148452, 2.711731), category: "Drinks")
 
         self.stageList = [shrimpStage, drinks1, drinks2, drinks3]
-        
     }
     
 }

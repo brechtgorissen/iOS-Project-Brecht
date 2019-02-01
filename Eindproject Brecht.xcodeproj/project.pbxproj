@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		494B1E7822049A030095F7B9 /* ArtistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494B1E7722049A030095F7B9 /* ArtistDetailViewController.swift */; };
 		49A7075D22032E0100B604F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7075C22032E0100B604F7 /* AppDelegate.swift */; };
 		49A7075F22032E0100B604F7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7075E22032E0100B604F7 /* MainViewController.swift */; };
 		49A7076222032E0100B604F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A7076022032E0100B604F7 /* Main.storyboard */; };
@@ -16,10 +17,12 @@
 		49DB4F4E22044B50008337D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49DB4F4D22044B50008337D9 /* Assets.xcassets */; };
 		49DB4F5022044DF3008337D9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DB4F4F22044DF3008337D9 /* MapViewController.swift */; };
 		49DB4F5422048027008337D9 /* shrimp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49DB4F5322048027008337D9 /* shrimp.jpg */; };
+		49DB4F5622048784008337D9 /* ArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DB4F5522048784008337D9 /* ArtistsViewController.swift */; };
 		643E92B12203752800114ADC /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643E92B02203752800114ADC /* DAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		494B1E7722049A030095F7B9 /* ArtistDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistDetailViewController.swift; sourceTree = "<group>"; };
 		49A7075922032E0100B604F7 /* Eindproject Brecht.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eindproject Brecht.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A7075C22032E0100B604F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49A7075E22032E0100B604F7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -31,6 +34,7 @@
 		49DB4F4D22044B50008337D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49DB4F4F22044DF3008337D9 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		49DB4F5322048027008337D9 /* shrimp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shrimp.jpg; sourceTree = "<group>"; };
+		49DB4F5522048784008337D9 /* ArtistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsViewController.swift; sourceTree = "<group>"; };
 		643E92B02203752800114ADC /* DAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +103,8 @@
 			children = (
 				49A7075E22032E0100B604F7 /* MainViewController.swift */,
 				49DB4F4F22044DF3008337D9 /* MapViewController.swift */,
+				49DB4F5522048784008337D9 /* ArtistsViewController.swift */,
+				494B1E7722049A030095F7B9 /* ArtistDetailViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -175,6 +181,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				494B1E7822049A030095F7B9 /* ArtistDetailViewController.swift in Sources */,
+				49DB4F5622048784008337D9 /* ArtistsViewController.swift in Sources */,
 				49A707722203388F00B604F7 /* Artist.swift in Sources */,
 				49DB4F5022044DF3008337D9 /* MapViewController.swift in Sources */,
 				49A7075F22032E0100B604F7 /* MainViewController.swift in Sources */,
