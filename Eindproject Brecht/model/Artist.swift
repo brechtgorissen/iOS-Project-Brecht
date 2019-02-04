@@ -10,6 +10,7 @@ import Foundation
 
 class Artist{
     
+    var id:Int
     var artistName:String
     var artistImage:String
     var perfDay:Int
@@ -17,7 +18,8 @@ class Artist{
     var genre:String
     var bio:String
     
-    init(artistName:String, artistImage:String, perfDay:Int, perfTime:String, genre:String, bio:String) {
+    init(id:Int, artistName:String, artistImage:String, perfDay:Int, perfTime:String, genre:String, bio:String) {
+        self.id = id
         self.artistName = artistName
         self.artistImage = artistImage
         self.perfDay = perfDay

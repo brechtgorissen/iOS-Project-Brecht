@@ -14,6 +14,8 @@
 		49A7076722032E0400B604F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A7076522032E0400B604F7 /* LaunchScreen.storyboard */; };
 		49A707722203388F00B604F7 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A707712203388F00B604F7 /* Artist.swift */; };
 		49A7077922034F4000B604F7 /* Stage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7077822034F4000B604F7 /* Stage.swift */; };
+		49BE95DB22083463008F3E11 /* Favourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BE95DA22083463008F3E11 /* Favourites.swift */; };
+		49BE95DD220844A1008F3E11 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BE95DC220844A1008F3E11 /* FavouritesViewController.swift */; };
 		49DB4F4E22044B50008337D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49DB4F4D22044B50008337D9 /* Assets.xcassets */; };
 		49DB4F5022044DF3008337D9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DB4F4F22044DF3008337D9 /* MapViewController.swift */; };
 		49DB4F5422048027008337D9 /* shrimp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49DB4F5322048027008337D9 /* shrimp.jpg */; };
@@ -31,6 +33,8 @@
 		49A7076822032E0400B604F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49A707712203388F00B604F7 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		49A7077822034F4000B604F7 /* Stage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stage.swift; sourceTree = "<group>"; };
+		49BE95DA22083463008F3E11 /* Favourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourites.swift; sourceTree = "<group>"; };
+		49BE95DC220844A1008F3E11 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		49DB4F4D22044B50008337D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49DB4F4F22044DF3008337D9 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		49DB4F5322048027008337D9 /* shrimp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shrimp.jpg; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 				49A707712203388F00B604F7 /* Artist.swift */,
 				49A7077822034F4000B604F7 /* Stage.swift */,
 				643E92B02203752800114ADC /* DAO.swift */,
+				49BE95DA22083463008F3E11 /* Favourites.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -105,6 +110,7 @@
 				49DB4F4F22044DF3008337D9 /* MapViewController.swift */,
 				49DB4F5522048784008337D9 /* ArtistsViewController.swift */,
 				494B1E7722049A030095F7B9 /* ArtistDetailViewController.swift */,
+				49BE95DC220844A1008F3E11 /* FavouritesViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -189,6 +195,8 @@
 				49A7077922034F4000B604F7 /* Stage.swift in Sources */,
 				49A7075D22032E0100B604F7 /* AppDelegate.swift in Sources */,
 				643E92B12203752800114ADC /* DAO.swift in Sources */,
+				49BE95DD220844A1008F3E11 /* FavouritesViewController.swift in Sources */,
+				49BE95DB22083463008F3E11 /* Favourites.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
