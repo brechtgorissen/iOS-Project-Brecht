@@ -16,13 +16,16 @@ class FavouritesViewController: UIViewController, UITableViewDataSource, UITable
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let favCell:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "favCell")!
-        for var index in 0...20{
+        let artist:Artist = Favourites.sharedInstance.favouritesList[0]
+        favCell.textLabel?.text = artist.artistName
+        /*for var index in 0...20{
             let artist:Artist = Favourites.sharedInstance.favouritesList[index]
             if index == artist.id{
                 favCell.textLabel?.text = artist.artistName
             }
             index+=1
         }
+        */
         return favCell
     }
     

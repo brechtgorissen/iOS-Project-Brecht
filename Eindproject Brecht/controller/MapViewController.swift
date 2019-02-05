@@ -62,6 +62,15 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
                 }
             }
             festivalMapView.addAnnotations(drinksAnnotations)
+        case 3:
+            festivalMapView.removeAnnotations(dao.stageList)
+            var foodAnnotations:[MKAnnotation] = [MKAnnotation]()
+            for food in dao.stageList{
+                if food.category == "Food"{
+                    foodAnnotations+=[food]
+                }
+            }
+            festivalMapView.addAnnotations(foodAnnotations)
         default:
             festivalMapView.addAnnotations(dao.stageList)
         }

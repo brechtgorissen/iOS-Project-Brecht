@@ -14,6 +14,10 @@ class ArtistsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     @IBOutlet weak var artistsTableView: UITableView!
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return dao.stageList.count
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dao.stageList[section].setList.count
     }
@@ -32,6 +36,7 @@ class ArtistsViewController: UIViewController, UITableViewDataSource, UITableVie
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        artistsTableView.reloadData()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -21,6 +21,10 @@
 		49DB4F5422048027008337D9 /* shrimp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 49DB4F5322048027008337D9 /* shrimp.jpg */; };
 		49DB4F5622048784008337D9 /* ArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DB4F5522048784008337D9 /* ArtistsViewController.swift */; };
 		643E92B12203752800114ADC /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643E92B02203752800114ADC /* DAO.swift */; };
+		64B9A0DD2209025D007D93F4 /* 5070-artwork.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 64B9A0DC2209025C007D93F4 /* 5070-artwork.jpg */; };
+		64B9A0DF22090348007D93F4 /* 2cb20622d21766cc5d18802a96dceefa.png in Resources */ = {isa = PBXBuildFile; fileRef = 64B9A0DE22090347007D93F4 /* 2cb20622d21766cc5d18802a96dceefa.png */; };
+		64B9A0E122090451007D93F4 /* 0874b5d5823730b0bdd3e20ba2f4a9ae.png in Resources */ = {isa = PBXBuildFile; fileRef = 64B9A0E022090451007D93F4 /* 0874b5d5823730b0bdd3e20ba2f4a9ae.png */; };
+		64B9A0E3220971F4007D93F4 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B9A0E2220971F4007D93F4 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		49DB4F5322048027008337D9 /* shrimp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shrimp.jpg; sourceTree = "<group>"; };
 		49DB4F5522048784008337D9 /* ArtistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsViewController.swift; sourceTree = "<group>"; };
 		643E92B02203752800114ADC /* DAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
+		64B9A0DC2209025C007D93F4 /* 5070-artwork.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "5070-artwork.jpg"; sourceTree = "<group>"; };
+		64B9A0DE22090347007D93F4 /* 2cb20622d21766cc5d18802a96dceefa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2cb20622d21766cc5d18802a96dceefa.png; sourceTree = "<group>"; };
+		64B9A0E022090451007D93F4 /* 0874b5d5823730b0bdd3e20ba2f4a9ae.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0874b5d5823730b0bdd3e20ba2f4a9ae.png; sourceTree = "<group>"; };
+		64B9A0E2220971F4007D93F4 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,9 @@
 				49A7075B22032E0100B604F7 /* Eindproject Brecht */,
 				49DB4F4D22044B50008337D9 /* Assets.xcassets */,
 				49DB4F5322048027008337D9 /* shrimp.jpg */,
+				64B9A0DE22090347007D93F4 /* 2cb20622d21766cc5d18802a96dceefa.png */,
+				64B9A0E022090451007D93F4 /* 0874b5d5823730b0bdd3e20ba2f4a9ae.png */,
+				64B9A0DC2209025C007D93F4 /* 5070-artwork.jpg */,
 				49A7075A22032E0100B604F7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,6 +122,7 @@
 				49DB4F5522048784008337D9 /* ArtistsViewController.swift */,
 				494B1E7722049A030095F7B9 /* ArtistDetailViewController.swift */,
 				49BE95DC220844A1008F3E11 /* FavouritesViewController.swift */,
+				64B9A0E2220971F4007D93F4 /* AboutViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -174,9 +186,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				49A7076722032E0400B604F7 /* LaunchScreen.storyboard in Resources */,
+				64B9A0E122090451007D93F4 /* 0874b5d5823730b0bdd3e20ba2f4a9ae.png in Resources */,
 				49DB4F5422048027008337D9 /* shrimp.jpg in Resources */,
 				49DB4F4E22044B50008337D9 /* Assets.xcassets in Resources */,
 				49A7076222032E0100B604F7 /* Main.storyboard in Resources */,
+				64B9A0DF22090348007D93F4 /* 2cb20622d21766cc5d18802a96dceefa.png in Resources */,
+				64B9A0DD2209025D007D93F4 /* 5070-artwork.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +204,7 @@
 			files = (
 				494B1E7822049A030095F7B9 /* ArtistDetailViewController.swift in Sources */,
 				49DB4F5622048784008337D9 /* ArtistsViewController.swift in Sources */,
+				64B9A0E3220971F4007D93F4 /* AboutViewController.swift in Sources */,
 				49A707722203388F00B604F7 /* Artist.swift in Sources */,
 				49DB4F5022044DF3008337D9 /* MapViewController.swift in Sources */,
 				49A7075F22032E0100B604F7 /* MainViewController.swift in Sources */,

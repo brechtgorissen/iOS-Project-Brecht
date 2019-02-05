@@ -26,13 +26,29 @@ class DAO{
         let defShrimp = Artist.init(id: 9, artistName: "Def Shrimp", artistImage: "", perfDay: 2, perfTime: "21.00u - 22.00u", genre: "Heavy Metal", bio: "")
         let shrimpTemptation = Artist.init(id: 10, artistName: "Shrimp Temptation", artistImage: "", perfDay: 2, perfTime: "22.30u - 00.30u", genre: "Alternative Metal", bio: "")
         
+        let scampiFex = Artist.init(id: 11, artistName: "Scampifex", artistImage: "", perfDay: 1, perfTime: "16.30u - 17.30u", genre: "Alternative Rock", bio: "")
+        let jobForAScampi = Artist.init(id: 12, artistName: "Job For A Scampi", artistImage: "", perfDay: 1, perfTime: "18.00u - 19.00u", genre: "Groove Metal", bio: "")
+        let scampiGrin = Artist.init(id: 13, artistName: "Scampi Grin", artistImage: "", perfDay: 1, perfTime: "19.30u - 20.30u", genre: "Alternative Rock", bio: "")
+        
+        let betweenTheBuriedAndScampi = Artist.init(id: 14, artistName: "Between The Buried And Scampi", artistImage: "", perfDay: 2, perfTime: "16.30u - 17.30u", genre: "Hard Rock", bio: "")
+        let scampiDominion = Artist.init(id: 15, artistName: "Scampi Dominion", artistImage: "", perfDay: 2, perfTime: "18.00u - 19.00u", genre: "Alternative Metal", bio: "")
+        let suicideScampi = Artist.init(id: 16, artistName: "Suicide Scampi", artistImage: "", perfDay: 2, perfTime: "19.30u - 20.30u", genre: "Alternative Metal", bio: "")
+        
         let shrimpStage = Stage.init(stageName: "Shrimp Stage", coordinate: CLLocationCoordinate2DMake(51.152238, 2.721087), category: "Stages")
+        let scampiStage = Stage.init(stageName: "Scampi Stage", coordinate: CLLocationCoordinate2DMake(51.152238, 2.721087), category: "Stages")
+        
         shrimpStage.setList+=[shrimpsOfDeathMetal, shrimpOfGod, shrimpZombie, lynyrdShrimpnyrd, shrimpKnot, shrimpSmack, stoneTempleShrimps, whiteShrimp, defShrimp, shrimpTemptation]
-        let drinks1 = Stage.init(stageName: "Drinks 1", coordinate: CLLocationCoordinate2DMake(51.149543, 2.713744), category: "Drinks")
-        let drinks2 = Stage.init(stageName: "Drinks 2", coordinate: CLLocationCoordinate2DMake(51.149018, 2.714387), category: "Drinks")
-        let drinks3 = Stage.init(stageName: "Drinks 3", coordinate: CLLocationCoordinate2DMake(51.148452, 2.711731), category: "Drinks")
-
-        self.stageList = [shrimpStage, drinks1, drinks2, drinks3]
+        scampiStage.setList+=[scampiFex, jobForAScampi, scampiGrin, betweenTheBuriedAndScampi, scampiDominion, suicideScampi]
+        
+        let drinks1 = Stage.init(stageName: "Cocktails", coordinate: CLLocationCoordinate2DMake(51.149543, 2.713744), category: "Drinks")
+        let drinks2 = Stage.init(stageName: "Beers", coordinate: CLLocationCoordinate2DMake(51.149018, 2.714387), category: "Drinks")
+        let drinks3 = Stage.init(stageName: "Shrimp Smoothies", coordinate: CLLocationCoordinate2DMake(51.148452, 2.711731), category: "Drinks")
+        
+        let food1 = Stage.init(stageName: "Belgian Fries", coordinate: CLLocationCoordinate2DMake(51.149543, 2.713744), category: "Food")
+        let food2 = Stage.init(stageName: "Fried Shrimp", coordinate: CLLocationCoordinate2DMake(51.149018, 2.714387), category: "Food")
+        let food3 = Stage.init(stageName: "Calamares (fried)", coordinate: CLLocationCoordinate2DMake(51.148452, 2.711731), category: "Food")
+        
+        self.stageList = [shrimpStage, scampiStage, drinks1, drinks2, drinks3, food1, food2, food3]
     }
     
 }

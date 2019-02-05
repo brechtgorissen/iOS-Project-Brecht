@@ -42,9 +42,9 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
             }else{
                 tableView.rowHeight = 0
             }
+            return cell1
         default:
-            break
-            
+           break
         }
         return cell1
     }
@@ -60,12 +60,13 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         }
     }
     
-    @IBAction func reloadTableViewData() {
+    @IBAction func reloadTableView(_ sender: UISegmentedControl) {
         myTableView.reloadData()
     }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.reloadTableViewData()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
