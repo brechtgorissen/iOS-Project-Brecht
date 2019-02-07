@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		494B1E7822049A030095F7B9 /* ArtistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494B1E7722049A030095F7B9 /* ArtistDetailViewController.swift */; };
 		495128A0220C3643006585C2 /* launchscreen_artwork.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4951289F220C3643006585C2 /* launchscreen_artwork.jpg */; };
+		495128A4220C3A99006585C2 /* shrimp.png in Resources */ = {isa = PBXBuildFile; fileRef = 495128A3220C3A99006585C2 /* shrimp.png */; };
 		49A7075D22032E0100B604F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7075C22032E0100B604F7 /* AppDelegate.swift */; };
 		49A7075F22032E0100B604F7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7075E22032E0100B604F7 /* MainViewController.swift */; };
 		49A7076222032E0100B604F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49A7076022032E0100B604F7 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		494B1E7722049A030095F7B9 /* ArtistDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistDetailViewController.swift; sourceTree = "<group>"; };
 		4951289F220C3643006585C2 /* launchscreen_artwork.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launchscreen_artwork.jpg; sourceTree = "<group>"; };
+		495128A3220C3A99006585C2 /* shrimp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shrimp.png; sourceTree = "<group>"; };
 		49A7075922032E0100B604F7 /* Eindproject Brecht.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eindproject Brecht.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49A7075C22032E0100B604F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49A7075E22032E0100B604F7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				64B9A0E022090451007D93F4 /* metalmeeting_logo.png */,
 				49BA93332209883800EF045E /* slipknot.jpg */,
 				4951289F220C3643006585C2 /* launchscreen_artwork.jpg */,
+				495128A3220C3A99006585C2 /* shrimp.png */,
 				49A7075A22032E0100B604F7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				64B9A0E122090451007D93F4 /* metalmeeting_logo.png in Resources */,
 				495128A0220C3643006585C2 /* launchscreen_artwork.jpg in Resources */,
 				49DB4F4E22044B50008337D9 /* Assets.xcassets in Resources */,
+				495128A4220C3A99006585C2 /* shrimp.png in Resources */,
 				49A7076222032E0100B604F7 /* Main.storyboard in Resources */,
 				64B9A0DF22090348007D93F4 /* shrimppop_logo.png in Resources */,
 				49BA93342209883900EF045E /* slipknot.jpg in Resources */,
