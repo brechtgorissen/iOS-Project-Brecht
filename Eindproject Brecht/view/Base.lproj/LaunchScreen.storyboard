@@ -18,17 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="topRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5070-artwork.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="HzM-0u-vey">
+                            <imageView userInteractionEnabled="NO" contentMode="topRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="launchscreen_artwork.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="HzM-0u-vey">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2cb20622d21766cc5d18802a96dceefa.png" translatesAutoresizingMaskIntoConstraints="NO" id="Z8H-rh-53X">
-                                <rect key="frame" x="46" y="125" width="282" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shrimppop_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="J8F-tB-khE">
+                                <rect key="frame" x="16" y="179" width="343" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0874b5d5823730b0bdd3e20ba2f4a9ae.png" translatesAutoresizingMaskIntoConstraints="NO" id="mzM-2q-OuX">
-                                <rect key="frame" x="67" y="261" width="240" height="42"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="metalmeeting_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="1YV-92-cvb">
+                                <rect key="frame" x="67" y="315" width="240" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -42,8 +41,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="0874b5d5823730b0bdd3e20ba2f4a9ae.png" width="461" height="91"/>
-        <image name="2cb20622d21766cc5d18802a96dceefa.png" width="263" height="92"/>
-        <image name="5070-artwork.jpg" width="1400" height="800"/>
+        <image name="launchscreen_artwork.jpg" width="1347" height="764"/>
+        <image name="metalmeeting_logo.png" width="461" height="91"/>
+        <image name="shrimppop_logo.png" width="263" height="92"/>
     </resources>
 </document>
