@@ -18,23 +18,10 @@ class FavouritesViewController: UIViewController, UITableViewDataSource, UITable
         let favCell:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "favCell")!
         let artist:Artist = Favourites.sharedInstance.favouritesList[0]
         favCell.textLabel?.text = artist.artistName
-        /*for var index in 0...20{
-            let artist:Artist = Favourites.sharedInstance.favouritesList[index]
-            if index == artist.id{
-                favCell.textLabel?.text = artist.artistName
-            }
-            index+=1
-        }
-        */
         return favCell
     }
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 }

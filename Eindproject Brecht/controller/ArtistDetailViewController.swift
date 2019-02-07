@@ -15,12 +15,20 @@ class ArtistDetailViewController: UIViewController {
     @IBOutlet weak var lblGenre: UILabel!
     @IBOutlet weak var tvBio: UITextView!
     @IBOutlet weak var btnFavourites: UIButton!
+    @IBOutlet weak var lblPerfDay: UILabel!
+    @IBOutlet weak var lblPerfTime: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         ivArtist.image = UIImage.init(named: passedArtist!.artistImage)
         lblGenre.text = passedArtist!.genre
         tvBio.text = passedArtist!.bio
+        if passedArtist?.perfDay == 1{
+            lblPerfDay.text = "Fishy Friday"
+        }else{
+            lblPerfDay.text = "Shrimpy Saturday"
+        }
+        lblPerfTime.text = passedArtist?.perfTime
     }
     
     @IBAction func btnFavouritesPressed() {
@@ -28,7 +36,6 @@ class ArtistDetailViewController: UIViewController {
             Favourites.sharedInstance.addArtist(artist: passedArtist!)
             btnFavourites.isSelected = true
         }else{
-            Favourites.sharedInstance.removeArtist(artist: passedArtist!)
             btnFavourites.isSelected = false
         }
     }

@@ -30,5 +30,4 @@ class Stage: NSObject, MKAnnotation{
     var subtitle: String?{
         return category
     }
-    
 }

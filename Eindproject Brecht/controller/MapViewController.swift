@@ -34,15 +34,13 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     override func viewDidLoad() {
         super.viewDidLoad()
         festivalMapView.mapType = .hybrid
-        let mapRadius: CLLocationDistance = 1500
-        let mapCenter = CLLocationCoordinate2DMake(51.150518, 2.716752)
+        let mapRadius: CLLocationDistance = 150
+        let mapCenter = CLLocationCoordinate2DMake(51.151779, 2.719709)
         let mapRegion = MKCoordinateRegion.init(center: mapCenter, latitudinalMeters: mapRadius, longitudinalMeters: mapRadius)
         festivalMapView.setRegion(mapRegion, animated: true)
         switch (segCtrlMap.selectedSegmentIndex) {
-        //All
         case 0:
             festivalMapView.addAnnotations(dao.stageList)
-        //Stages
         case 1:
             festivalMapView.removeAnnotations(dao.stageList)
             var stageAnnotations:[MKAnnotation] = [MKAnnotation]()
@@ -52,7 +50,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
                 }
             }
             festivalMapView.addAnnotations(stageAnnotations)
-        //Drinks
         case 2:
             festivalMapView.removeAnnotations(dao.stageList)
             var drinksAnnotations:[MKAnnotation] = [MKAnnotation]()
@@ -79,16 +76,4 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     @IBAction func reloadMapView() {
         self.viewDidLoad()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

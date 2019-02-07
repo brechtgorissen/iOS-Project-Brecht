@@ -13,62 +13,45 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
     let dao = DAO.init()
     @IBOutlet weak var segControlDay: UISegmentedControl!
     @IBOutlet weak var myTableView: UITableView!
+    var lineUpList = [Stage]()
+    var lineupFriday = [Stage]()
+    var lineupSaturday = [Stage]()
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return dao.stageList.count
+        return dao.lineUpList.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dao.stageList[section].setList.count
+        return lineUpList[section].setList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell1:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell1")!
-        let artist = dao.stageList[indexPath.section].setList[indexPath.row]
-        let stage = dao.stageList[indexPath.section]
-        tableView.rowHeight = 44
-        switch (segControlDay.selectedSegmentIndex) {
-        case 0:
-            if artist.perfDay == 1 && stage.category == "Stages"{
-                cell1.textLabel?.text = artist.artistName
-                cell1.detailTextLabel?.text = artist.perfTime
-            }else{
-                tableView.rowHeight = 0
-            }
-        case 1:
-            if artist.perfDay == 2 && stage.category == "Stages"{
-                cell1.textLabel?.text = artist.artistName
-                cell1.detailTextLabel?.text = artist.perfTime
-            }else{
-                tableView.rowHeight = 0
-            }
-            return cell1
-        default:
-           break
-        }
+        let artist = lineUpList[indexPath.section].setList[indexPath.row]
+        cell1.textLabel?.text = artist.artistName
+        cell1.detailTextLabel?.text = artist.perfTime
         return cell1
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let stage = dao.stageList[section]
         tableView.sectionHeaderHeight = 55
-        if stage.category == "Stages"{
-            return dao.stageList[section].stageName
-        }else{
-            tableView.sectionHeaderHeight = 0
-            return ""
-        }
+        return lineUpList[section].stageName
     }
     
     @IBAction func reloadTableView(_ sender: UISegmentedControl) {
+        if(sender.selectedSegmentIndex == 0){
+            lineUpList = lineupFriday
+        }else{
+            lineUpList = lineupSaturday
+        }
         myTableView.reloadData()
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        lineupFriday = dao.lineUpList[0]
+        lineupSaturday = dao.lineUpList[1]
+        reloadTableView(segControlDay)
     }
-
 }
 

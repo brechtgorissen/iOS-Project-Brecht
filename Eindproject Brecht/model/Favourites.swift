@@ -21,9 +21,4 @@ class Favourites{
     func addArtist(artist:Artist){
         self.favouritesList.append(artist)
     }
-    
-    func removeArtist(artist:Artist){
-        self.favouritesList.remove(at: artist.id)
-    }
-
 }
